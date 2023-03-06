@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         db = AppDatabase.getAppDatabase(this);
         initView();
+        getAllEmployee();
     }
 
     private void initView() {
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (id > 0) {
             Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
         }
-        getAllEmployee();
+
     }
 
     private void getAllEmployee() {
